@@ -12,6 +12,7 @@ driver.get("http://orteil.dashnet.org/experiments/cookie/")
 cookie = driver.find_element(By.ID, "cookie")
 
 timeout = time.time() + 60*5  # 5 minutes from now
+# This just ensures that the loop keeps running
 upgrade_check = 5
 
 while True:
